@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>15_伪类选择器_语言伪类</title>
+    <style>
+      p:lang(zh-CN) {
+        color: red;
+      }
+
+      p:lang(en) {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>尚硅谷1</div>
+    <div lang="en">尚硅谷2</div>
+    <p lang="zh-CN">前端</p>
+    <p lang="en">前端</p>
+    <span>你好</span>
+  </body>
+</html>

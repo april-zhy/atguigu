@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>26_行内块的幽灵空白问题</title>
+    <style>
+      div {
+        width: 600px;
+        background-color: skyblue;
+        /* font-size: 0; */
+        vertical-align: top;
+      }
+      img {
+        height: 200px;
+        /* display: block; */
+      }
+      .top {
+        vertical-align: top;
+      }
+
+      .text-top {
+        vertical-align: text-top;
+      }
+
+      .middle {
+        vertical-align: middle;
+      }
+
+      .text-bottom {
+        vertical-align: text-bottom;
+      }
+
+      .bottom {
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="../images/我的自拍.jpg" alt="悟空" />
+      x
+    </div>
+  </body>
+</html>

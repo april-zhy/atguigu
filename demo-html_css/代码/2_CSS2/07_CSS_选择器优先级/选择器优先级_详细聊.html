@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>选择器优先级_详细聊</title>
+    <style>
+      span#atguigu {
+        color: orange;
+      }
+      .container span.slogan {
+        color: red;
+      }
+      div > p > span:nth-child(1) {
+        color: green;
+      }
+      .slogan.ss {
+        color: purple;
+      }
+      span.slogan {
+        color: blue;
+      }
+
+      ul > li {
+        color: red;
+      }
+
+      div ul > li {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <span class="slogan ss" id="atguigu">
+          尚硅谷，让天下没有难学的技术！
+        </span>
+        <span class="slogan" id="atguigu">
+          尚硅谷，让天下没有难学的技术！
+        </span>
+        <span>欢迎同学们来学习！</span>
+      </p>
+    </div>
+
+    <div>
+      <ul>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+      </ul>
+    </div>
+  </body>
+</html>

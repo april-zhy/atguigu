@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>01_CSS中常用的长度单位</title>
+    <style>
+      html {
+        font-size: 40px;
+      }
+      .container {
+        font-size: 60px;
+        padding: 0;
+        margin: 0;
+        background-color: bisque;
+      }
+      /* 第一种长度单位：px */
+      .div1 {
+        width: 200px;
+        height: 200px;
+        font-size: 20px;
+        background-color: skyblue;
+      }
+      /* 第二种长度单位：元素自身的font-size， */
+      .div2 {
+        width: 10em;
+        height: 10em;
+        font-size: 25px;
+        background-color: orange;
+      }
+      /* 第三种长度单位：相对HTML的font-size，若没有设置，则是默认16px   10*40px = 400px */
+      .div3 {
+        width: 10rem;
+        height: 10rem;
+        font-size: 25px;
+        background-color: green;
+      }
+
+      .div4 {
+        width: 200px;
+        height: 200px;
+        font-size: 25px;
+        background-color: gray;
+      }
+      /* 第四种长度单位：%（相对其父元素的百分比） 200px *50%=100px  */
+      .inside {
+        width: 50%;
+        height: 50%;
+        font-size: 150%;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div1">200px * 200px</div>
+      <hr />
+      <div class="div2">10em * 10em</div>
+      <hr />
+      <div class="div3">10rem * 10rem</div>
+      <hr />
+      <div class="div4">
+        <div class="inside">50% * 50%</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>15_margin的注意事项5</title>
+    <style>
+      body {
+        background-color: #ddd;
+      }
+      .container {
+        /* margin-top: 80px;
+        margin-bottom: 5px;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red; */
+        background-color: antiquewhite;
+      }
+      .box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      .box1 {
+        margin-top: 50px;
+        background-color: skyblue;
+      }
+      .box2 {
+        background-color: orange;
+      }
+      .box3 {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+    </div>
+    <div>其他内容</div>
+  </body>
+</html>

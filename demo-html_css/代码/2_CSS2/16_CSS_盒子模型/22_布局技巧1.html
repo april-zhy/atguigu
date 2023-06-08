@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>22_布局技巧1</title>
+    <style>
+      .outer {
+        width: 400px;
+        height: 100px;
+
+        line-height: 100px;
+        background-color: gray;
+        /* overflow: hidden; */
+        border: 1px solid red;
+        box-sizing: border-box;
+      }
+      .inner {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        /* margin: 0 auto;
+        margin-top: 150px; */
+        /* text-align: center; */
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <span class="inner">x </span>
+    </div>
+  </body>
+</html>

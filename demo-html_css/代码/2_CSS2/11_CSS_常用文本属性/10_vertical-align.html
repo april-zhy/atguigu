@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10_vertical-align</title>
+    <style>
+      @font-face {
+        font-family: "PPT";
+        src: url("../Catamaran.ttf");
+      }
+
+      div {
+        text-align: center;
+        line-height: 200px;
+        font-family: "PPT", "隶书";
+        font-size: 100px;
+        background-color: skyblue;
+      }
+
+      .span {
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: antiquewhite;
+      }
+
+      .top {
+        vertical-align: top;
+      }
+
+      .text-top {
+        vertical-align: text-top;
+      }
+
+      .baseline {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: antiquewhite;
+        vertical-align: baseline;
+      }
+
+      .middle {
+        vertical-align: middle;
+      }
+
+      .text-bottom {
+        vertical-align: text-bottom;
+      }
+
+      .bottom {
+        vertical-align: bottom;
+      }
+
+      /* span {
+        font-size: 30px;
+        background-color: orange;
+        vertical-align: bottom;
+      }
+      .san {
+        vertical-align: bottom;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div>
+      BaXx
+      <span class="span top">top</span>
+      <span class="span text-top">text-top</span>
+      <span class="span middle">middle</span>
+      <span class="baseline"></span>
+      <span class="span text-bottom">text-bottom</span>
+      <span class="span bottom">bottom</span>
+    </div>
+
+    <!-- <div>
+      <span>x前端</span>
+    </div> -->
+    <!-- <hr /> -->
+    <!-- <hr /> -->
+    <!--  <table border="1" cellspacing="0">
+      <caption>
+        人员信息
+      </caption>
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+          <th>性别</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr height="200">
+          <td class="san">张三</td>
+          <td>18</td>
+          <td>男</td>
+        </tr>
+        <tr>
+          <td>李四</td>
+          <td>20</td>
+          <td>女</td>
+        </tr>
+      </tbody>
+    </table> -->
+  </body>
+</html>
